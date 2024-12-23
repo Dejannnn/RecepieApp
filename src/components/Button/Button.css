@@ -1,0 +1,15 @@
+button {
+    font-family: Inter, sans-serif;
+    border-radius: 6px;
+    border: none;
+    background-color: #141413;
+    color: #FAFAF8;
+    width: 150px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    height: 35px;
+}
+
+.orange{
+    background-color: orange;
+}

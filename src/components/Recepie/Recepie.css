@@ -1,0 +1,15 @@
+section{
+    padding: 0 10%;
+    background-color: whitesmoke;
+
+}
+.suggested-recipe-container {
+    color: #475467;
+    line-height: 28px;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.suggested-recipe-container ul li, .suggested-recipe-container ol li {
+    margin-bottom: 8px;
+}

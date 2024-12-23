@@ -1,0 +1,46 @@
+.list{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: whitesmoke;
+    align-items: flex-start;
+    padding: 0% 10%;
+}
+
+.get-recipe {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align items to the left */
+    width: 100%;
+    margin-bottom: 40px; /* Add some space between the ingredients list and the recipe section */
+  }
+
+ul.ingredients-list {
+    margin-bottom: 48px;
+}
+
+ul.ingredients-list > li {
+    line-height: 28px;
+}
+
+.get-recipe-container{
+    background-color: gainsboro;
+    display: flex;
+    height: 20%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 28px;
+    border-radius: 8px;
+}
+.get-recipe-container > div > h3 {
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.get-recipe-container p {
+    color: #6B7280;
+    font-size: 0.875rem;
+    line-height: 20px;
+}
