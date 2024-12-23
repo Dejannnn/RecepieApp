@@ -2,7 +2,6 @@ import Button from "../Button/Button"
 import "./IngridientList.css"
 type Props = {
   ingredients: string[]
-  setShowRecepie: React.Dispatch<React.SetStateAction<boolean>>;
   getRecipe: () => Promise<void>;
 }
 
@@ -10,13 +9,7 @@ const IngridientList = (props: Props) => {
   const ingredientsListItems = props.ingredients.map((ingredient, index) => (
     <li key={ingredient+index}>{ingredient}</li>
 ))
-// const handleClick = async () => {
-//   try {
-//     await props.getRecipe(); // Call the passed function
-//   } catch (error) {
-//     console.error("Error fetching recipe:", error);
-//   }
-// };
+
 return (
   <section className="list">
       

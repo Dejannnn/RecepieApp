@@ -1,16 +1,16 @@
 import React, { useEffect } from "react"
-import "./Recepie.css"
+import "./Recipe.css"
 import Markdown from "react-markdown"
 
 //MarkDown
 type Props = {
-  recepie: string | null
+  recipe: string | null
 }
 
-const Recepie = (props: Props) => {
+const Recipe = (props: Props) => {
   const [markdowncontnet, setMarkdownContent] = React.useState<string| null>(null)
   useEffect(() => {    
-    !props.recepie && fetch("/recepieExample.md")
+    !props.recipe && fetch("/recepieExample.md")
       .then((response) => response.text())
       .then((text) => setMarkdownContent(text));
   }, []);
@@ -22,4 +22,4 @@ const Recepie = (props: Props) => {
   )
 }
 
-export default Recepie
+export default Recipe
